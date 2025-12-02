@@ -1,0 +1,4 @@
+FROM postgres:15
+ENV POSTGRES_PASSWORD=senha
+ENV POSTGRES_USER=admin
+ENV POSTGRES_DB=desafio2_db

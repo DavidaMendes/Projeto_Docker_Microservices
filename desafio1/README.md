@@ -40,6 +40,9 @@ Como as dependências não estão instaladas localmente, é necessário utilizar
 # Instruções de Execução
 
 ```bash
+# Acessar parta
+cd desafio1
+
 # Criar a rede Docker
 docker network create desafio1_rede
 
