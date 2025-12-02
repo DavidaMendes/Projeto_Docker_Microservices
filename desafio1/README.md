@@ -10,6 +10,7 @@ O client executa um script que envia uma mensagem para a rota do server.
 
 ## Estrutura do Projeto
 
+```bash
 desafio1
 │-- README.md
 │-- client
@@ -18,6 +19,7 @@ desafio1
 │-- server
 │ │-- app.py
 │ │-- Dockerfile
+```
 
 # Explicação funcionamento 
 ## Server
