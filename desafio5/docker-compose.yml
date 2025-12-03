@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  gateway:
+    build: ./gateway
+    container_name: desafio5_gateway
+    ports:
+      - "8000:8000"
+    depends_on:
+      - service_users
+      - service_orders
+    networks:
+      - desafio5_rede
+
+  service_users:
+    build: ./service_users
+    container_name: desafio5_service_users
+    ports:
+      - "8001:8001"
+    networks:
+      - desafio5_rede
+
+  service_orders:
+    build: ./service_orders
+    container_name: desafio5_service_orders
+    ports:
+      - "8002:8002"
+    networks:
+      - desafio5_rede
+
+networks:
+  desafio5_rede:
+    driver: bridge
