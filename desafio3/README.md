@@ -45,13 +45,6 @@ desafio3
 - Utilizado para armazenamento em cache
 - Integrado com a aplicação Flask
 
-## Docker Compose
-
-- Orquestra três serviços: `web`, `db` e `cache`
-- `web` depende de `db` e `cache`
-- Variáveis de ambiente configuradas para conexão do web com db
-- Volume para persistência de dados do PostgreSQL
-
 # Instruções de Execução
 
 ```bash
